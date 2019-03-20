@@ -1,0 +1,30 @@
+.footer {
+  /*background-image: url(../img/footer.png);*/
+  width: 100%;
+  padding-left: 0%;
+  padding-right: 0%;
+  height: 8.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  position: fixed;
+  z-index: 0;
+}
+
+.footer-img {
+  width: 100%;
+}
+.contact {
+  display: flex;
+  z-index: 1;
+  color: #ffffff;
+  font-size: 1.4rem;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #f05a28;
+  text-decoration: none;
+}

@@ -1,0 +1,10 @@
+.setup {
+  background-image: url(../src/img/background.jpg);
+  background-size: cover;
+  font-family: "Katahdin Round", Arial, Helvetica, sans-serif;
+}
+
+@font-face {
+  font-family: Katahdin Round;
+  src: url(../src/styles/KatahdinRound.otf);
+}
