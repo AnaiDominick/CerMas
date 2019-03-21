@@ -1,13 +1,15 @@
 .cardCSV {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  width: 60%;
   text-align: center;
   padding: 1rem;
   background-color: #f05a28;
   color: black;
   align-content: center;
-  margin: 2%;
+  margin: auto 0;
+  box-sizing: content-box;
+  margin: 0 auto;
+  width: 60%;
 }
 
 .cardCSV:hover {
@@ -34,4 +36,9 @@ h1,
 h4 {
   color: #ffffff;
   text-shadow: 2px 2px 5px #000000;
+}
+
+.containerUI {
+  padding-top: 16%;
+  padding-bottom: 2%;
 }

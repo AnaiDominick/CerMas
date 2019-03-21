@@ -5,7 +5,7 @@ import UserIndex from "../components/UserIndex";
 class User extends Component {
   render() {
     return (
-      <div className="container">
+      <div>
         <UserIndex />
       </div>
     );

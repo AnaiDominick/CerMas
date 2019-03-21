@@ -15,11 +15,11 @@ class Navbar extends React.Component {
     };
   }
 
-  toggleModal = (modal) => {
+  toggleModal = modal => {
     this.setState({
       [modal]: !this.state[modal]
     });
-  }
+  };
 
   render() {
     return (
@@ -28,23 +28,37 @@ class Navbar extends React.Component {
         <img href="/" className="logo" src={logo} alt="navbar" />
 
         <div className="nav-btns">
-          <button className="login-btn" onClick={() => { this.toggleModal("showLoginModal"); }}>
+          <button
+            className="login-btn"
+            onClick={() => {
+              this.toggleModal("showLoginModal");
+            }}
+          >
             Log in
           </button>
-          <button className="signin-btn" onClick={() => { this.toggleModal("showSigninModal"); }}>
+          <button
+            className="signin-btn"
+            onClick={() => {
+              this.toggleModal("showSigninModal");
+            }}
+          >
             Sign in
           </button>
         </div>
-        {
-          this.state.showLoginModal
-            ? <LoginModal closeModal={() => { this.toggleModal("showLoginModal"); }} />
-            : null
-        }
-        {
-          this.state.showSigninModal
-            ? <SigninModal closeModal={() => { this.toggleModal("showSigninModal"); }} />
-            : null
-        }
+        {this.state.showLoginModal ? (
+          <LoginModal
+            closeModal={() => {
+              this.toggleModal("showLoginModal");
+            }}
+          />
+        ) : null}
+        {this.state.showSigninModal ? (
+          <SigninModal
+            closeModal={() => {
+              this.toggleModal("showSigninModal");
+            }}
+          />
+        ) : null}
       </nav>
     );
   }
