@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/login.css";
 import avatar from "../../img/img_avatar2.png";
 
 class Login extends React.Component {
@@ -34,7 +33,7 @@ class Login extends React.Component {
               &times;
             </span>
             <div className="imgcontainer">
-              <img src={avatar}" alt="Avatar" className="avatar" />
+              <img src={avatar} alt="Avatar" className="avatar" />
             </div>
 
             <div className="container">

@@ -5,3 +5,13 @@
 .carousel {
   z-index: 0;
 }
+
+h3,
+p {
+  color: #ffffff;
+  text-shadow: 2px 2px 1px black;
+}
+
+.carousel-control-next-icon {
+  text-shadow: 2px 2px 1px black;
+}
