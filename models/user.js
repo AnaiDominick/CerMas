@@ -10,7 +10,7 @@ const userSchema = new Schema({
     lastName: { type: String, required: true },
     email: { type: String, required: true },
     password: { type: String, required: true },
-    plan: { type: Boolean, required: true },
+    // plan: { type: Boolean, required: true },
     tables: [
         {
             type: Schema.Types.ObjectId,
