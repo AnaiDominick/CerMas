@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 const passport = require('passport');
 const JWT_SECRET = process.env.JWT_SECRET || "key";
 
-/* POST login. */
+/* POST login. */ // Matches with "/api/login"
 router.post('/', function (req, res, next) {
 
     passport.authenticate('local', { session: false }, (err, user, info) => {
@@ -23,13 +23,13 @@ router.post('/', function (req, res, next) {
             }
 
             const token = jwt.sign(user.toJSON(), JWT_SECRET);
-
+            // sessionStorage.setItem('token', token);
             return res.json({ user, token });
         });
     })
         (req, res);
-
 });
+
 
 module.exports = router;
 
