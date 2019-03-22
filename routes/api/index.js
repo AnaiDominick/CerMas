@@ -4,6 +4,7 @@ const userRoutes = require("./user");
 // const authenticateRoutes = require("./authentication");
 const loginRoutes = require("../../controllers/authenticationController");
 const csvRoutes = require("./csv");
+const logoutRoutes = require("../../controllers/logoutController");
 
 // Example routes
 router.use("/example", exampleRoutes);
@@ -12,5 +13,6 @@ router.use("/user", userRoutes);
 router.use("/login", loginRoutes);
 router.use("/userIndex", csvRoutes);
 // router.use("/populateduser", csvRoutes);
+router.use("/logout", logoutRoutes);
 
 module.exports = router;
