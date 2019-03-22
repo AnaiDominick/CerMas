@@ -43,10 +43,10 @@ passport.use(new LocalStrategy(
         message: 'Logged In Successfully'
       })
 
-        //if error
-        .catch(err => {
-          return done(err);
-        });
+      //if error
+      // .catch(err => {
+      //   return done(err);
+      // });
     });
   })
 );
