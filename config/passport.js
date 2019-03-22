@@ -43,10 +43,10 @@ passport.use(new LocalStrategy(
         message: 'Logged In Successfully'
       })
 
-        //if error
-        .catch(err => {
-          return done(err);
-        });
+      // if error
+      // .catch(err => {
+      //   return done(err);
+      // });
     });
   })
 );
@@ -57,7 +57,6 @@ passport.use(new JWTStrategy({
   secretOrKey: JWT_SECRET
 },
   function (jwtPayload, done) {
-
     //find the user in db if needed
     return UserModel.findOneById(jwtPayload.id)
       .then(user => {
@@ -67,6 +66,7 @@ passport.use(new JWTStrategy({
         return done(err);
       });
   }
+
 ));
 
 

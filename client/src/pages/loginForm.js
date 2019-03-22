@@ -38,7 +38,7 @@ class Login extends Component {
 
         const email = this.state.email.trim();
         const password = this.state.password.trim();
-
+        // let data = response.payload.data;
 
         if (this.areInputsValid(email, password)) {
             // console.log(this.state);
@@ -53,6 +53,9 @@ class Login extends Component {
                 )
                 .catch(err => console.log(err));
         }
+
+        // sessionStorage.setItem('jwtToken', data.token);
+        // console.log(sessionStorage);
     };
 
 
@@ -73,6 +76,7 @@ class Login extends Component {
         alert("Welcome!");
         return true;
     };
+
 
     render() {
         return (
